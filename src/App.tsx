@@ -1,6 +1,4 @@
-import { Button, Input, Popover } from 'antd';
-import { AppstoreAddOutlined, EditOutlined, DeleteOutlined } from '@ant-design/icons';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 import { observer } from 'mobx-react-lite';
 import { useRootStore } from './mst/store/RootStore';
@@ -8,10 +6,9 @@ import { useRootStore } from './mst/store/RootStore';
 import { Icon } from '@iconify/react';
 import WidgetCard from './components/WidgetCard';
 import WidgetTable from './components/WidgetTable';
-import { isMobile } from 'react-device-detect';
 
 function App() {
-	const { removeTodoById, tasks, fetchProducts } = useRootStore();
+	const { fetchProducts } = useRootStore();
 
 	useEffect(() => {
 		fetchProducts();

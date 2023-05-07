@@ -1,7 +1,6 @@
-import React, { FC, ReactElement, ReactNode } from 'react';
+import { FC, ReactElement, ReactNode } from 'react';
 import { Button } from 'asma-antrd';
 import { observer } from 'mobx-react-lite';
-import { isMobile } from 'react-device-detect';
 
 interface IWidgetCardProps {
 	icon: ReactElement;
